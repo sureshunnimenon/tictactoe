@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.gridbox {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  column-gap: 10px;
+  row-gap: 10px;
+  background-color: lightgrey;
+}
+
+.square {
+  width: 110px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  /* border: 10px solid red; */
+}
+
+svg {
+  stroke-width: 15px;
+  stroke: #ff665c;
+  fill: none;
+  stroke-linecap: round;
+}
+
+.cross {
+  stroke: #ec0bbe;
+}
+
+.result {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 3em;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+button {
+  padding: 10px;
+  font-size: 0.5em;
+  border-radius: 10px;
+  transition: all 1s;
+  background-color: green;
+  color: #fff;
+}
+
+button:hover {
+  background-color: blueviolet;
+  color: black;
+}
